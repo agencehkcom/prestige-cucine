@@ -5,7 +5,16 @@ import { Sun, Moon } from "lucide-react";
 import { useTheme } from "@/components/providers/ThemeProvider";
 
 export function ThemeToggle() {
-  const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme, mounted } = useTheme();
+
+  // Éviter le flash pendant l'hydratation
+  if (!mounted) {
+    return (
+      <div className="w-10 h-10 rounded-full theme-toggle flex items-center justify-center">
+        <Moon className="w-5 h-5 text-zinc-500" />
+      </div>
+    );
+  }
 
   return (
     <motion.button
