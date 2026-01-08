@@ -4,6 +4,7 @@ import { StatsSection } from "@/components/sections/StatsSection";
 import { ScrollSection } from "@/components/sections/ScrollSection";
 import { ProcessSection } from "@/components/sections/ProcessSection";
 import { MaterialsSection } from "@/components/sections/MaterialsSection";
+import { RigailSection } from "@/components/sections/RigailSection";
 import { BentoGrid } from "@/components/sections/BentoGrid";
 import { AppliancesSection } from "@/components/sections/AppliancesSection";
 import { GallerySection } from "@/components/sections/GallerySection";
@@ -35,6 +36,9 @@ export default function Home() {
 
         {/* Matériaux premium */}
         <MaterialsSection />
+
+        {/* Partenaire Rigail - Marbrerie */}
+        <RigailSection />
 
         {/* Features Bento Grid */}
         <BentoGrid />
