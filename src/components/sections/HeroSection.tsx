@@ -36,7 +36,7 @@ export function HeroSection() {
           className="absolute inset-0 z-0"
         >
           <Image
-            src="/images/hero-kitchen.jpg"
+            src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=90"
             alt="Cuisine haut de gamme sur-mesure"
             fill
             className="object-cover"
